@@ -6,8 +6,8 @@ $id = $_GET['id'];
 $query = "DELETE FROM tbl_siswa WHERE id_siswa = '$id'";
 
 if($koneksi->query($query)) {
-    header("location: admin/login.php");
+    header("location: index.php");
 } else {
-    echo "DATA GAGAL DIHAPUS!";
+    echo "<script>alert('Data Gagal Dihapus!')</script>";
 }
-?>
+?> 

@@ -10,9 +10,9 @@ $alamat       = $_POST['alamat'];
 $query = "UPDATE tbl_siswa SET nisn = '$nisn', nama_lengkap = '$nama_lengkap', alamat = '$alamat' WHERE id_siswa = '$id_siswa'";
 
 if($koneksi->query($query)) {
-    header("location: admin/login.php");
+    header("location: index.php");
 } else {
-    echo "Data Gagal Diupate!";
+    echo "<script>alert('Data Gagal Diupdate!')</script>";
 }
 
-?>
+?> 

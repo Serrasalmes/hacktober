@@ -29,7 +29,7 @@
     </div>
   </nav>
 
-  <div class="container" style="margin-top: 2rem">
+  <div class="container mt-5">
     <div class="row">
       <div class="col-md-8 offset-md-2">
         <div class="card">
@@ -56,7 +56,7 @@
 
               <button type="submit" class="btn btn-success">SIMPAN</button>
               <button type="reset" class="btn btn-warning">RESET</button>
-              <a href="admin/login.php" class="btn btn-primary">KEMBALI</a>
+              <a href="index.php" class="btn btn-primary">KEMBALI</a>
 
             </form>
           </div>

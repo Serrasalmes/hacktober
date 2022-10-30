@@ -9,12 +9,12 @@ $query = "INSERT INTO tbl_siswa (nisn, nama_lengkap, alamat) VALUES ('$nisn', '$
 
 if($koneksi->query($query)) {
 
-    header("location: admin/login.php");
+    header("location: index.php");
 
 } else {
 
-    echo "Data Gagal Disimpan!";
+    echo "<script>alert('Data Gagal Disimpan!')</script>";
 
 }
 
-?>
+?> 

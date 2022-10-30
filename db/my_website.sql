@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 28, 2022 at 06:10 AM
+-- Generation Time: Oct 30, 2022 at 10:48 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.1.6
 
@@ -58,9 +58,9 @@ CREATE TABLE `tbl_siswa` (
 --
 
 INSERT INTO `tbl_siswa` (`id_siswa`, `nisn`, `nama_lengkap`, `alamat`) VALUES
-(2, '12345678', 'test22', 'semarang'),
-(3, '123456', 'test', 'bandung'),
-(4, '667', 'tada', 'test');
+(15, '2021-1', 'Kimmy', 'Semarang'),
+(16, '2021-2', 'Toto', 'Semarang'),
+(17, '2021-3', 'Loly', 'Semarang');
 
 --
 -- Indexes for dumped tables
@@ -92,7 +92,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `tbl_siswa`
 --
 ALTER TABLE `tbl_siswa`
-  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
