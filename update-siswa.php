@@ -1,5 +1,4 @@
 <?php
-
 include('koneksi.php');
 
 $id_siswa     = $_POST['id_siswa'];
@@ -14,5 +13,4 @@ if($koneksi->query($query)) {
 } else {
     echo "<script>alert('Data Gagal Diupdate!')</script>";
 }
-
 ?> 

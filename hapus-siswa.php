@@ -1,9 +1,7 @@
 <?php
-
 include('koneksi.php');
 
 $id = $_GET['id'];
-
 $query = "DELETE FROM tbl_siswa WHERE id_siswa = '$id'";
 
 if($koneksi->query($query)) {
@@ -11,5 +9,4 @@ if($koneksi->query($query)) {
 } else {
     echo "<script>alert('Data Gagal Dihapus!')</script>";
 }
-
 ?> 
