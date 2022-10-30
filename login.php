@@ -33,22 +33,21 @@
 		<div class="container py-5 h-100">
 			<div class="row d-flex justify-content-center align-items-center h-100">
 				<div class="col col-xl-10">
-					<div class="card" style="border-radius: 1rem;">
+					<div class="card custom-card">
 						<div class="row g-0">
 							<div class="col-md-6 col-lg-5 d-none d-md-block">
-								<img src="images/bg-logn.png" alt="login form" class="img-fluid"
-									style="border-radius: 1rem 0 0 1rem;" />
+								<img src="images/bg-logn.png" alt="login form" class="img-fluid custom-radius" />
 							</div>
 							<div class="col-md-6 col-lg-7 d-flex align-items-center">
 								<div class="card-body p-4 p-lg-5 text-black">
 									<form method="POST" action="cek_login.php">
 
 										<div class="d-flex align-items-center mb-3 pb-1">
-											<i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+											<i class="fas fa-cubes fa-2x me-3 custom-color"></i>
 											<span class="h1 fw-bold mb-0">Login</span>
 										</div>
 
-										<h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your
+										<h5 class="fw-normal mb-3 pb-3 custom-spacing">Sign into your
 											account</h5>
 
 										<div class="form-outline mb-4">

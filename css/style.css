@@ -1,3 +1,23 @@
+:root {
+    --primary: #2c3461;
+}
+
 .custom {
-    background-color: #2c3461;
+    background-color: var(--primary);
+}
+
+.custom-card {
+    border-radius: 1rem;
+}
+
+.custom-radius {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.custom-color {
+    color: var(--primary);
+}
+
+.custom-spacing {
+    letter-spacing: 1px;
 }
