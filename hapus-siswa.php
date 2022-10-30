@@ -1,4 +1,5 @@
 <?php
+
 include('koneksi.php');
 
 $id = $_GET['id'];
@@ -10,4 +11,5 @@ if($koneksi->query($query)) {
 } else {
     echo "<script>alert('Data Gagal Dihapus!')</script>";
 }
+
 ?> 

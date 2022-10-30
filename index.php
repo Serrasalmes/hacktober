@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -13,9 +15,11 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+
+  </head>
 
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Halaman Admin</a>
@@ -39,6 +43,7 @@
 		header("location:login.php?pesan=belum_login");
 	}
 	?>
+
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-12">
@@ -59,6 +64,7 @@
                 </tr>
               </thead>
               <tbody>
+
                 <?php 
                       include('koneksi.php');
                       $no = 1;
@@ -71,13 +77,16 @@
                   <td><?php echo $row['nisn'] ?></td>
                   <td><?php echo $row['nama_lengkap'] ?></td>
                   <td><?php echo $row['alamat'] ?></td>
+
                   <td class="text-center">
                     <a href="edit-siswa.php?id=<?php echo $row['id_siswa'] ?>" class="btn btn-sm btn-primary">EDIT</a>
                     <a href="hapus-siswa.php?id=<?php echo $row['id_siswa'] ?>" class="btn btn-sm btn-danger">HAPUS</a>
                   </td>
+
                 </tr>
 
                 <?php } ?>
+
               </tbody>
             </table>
           </div>
@@ -96,6 +105,7 @@
         $('#myTable').DataTable();
       });
     </script>
+    
 </body>
 
 </html>
