@@ -1,3 +1,13 @@
+<?php
+include 'koneksi.php';
+?>
+
+<?php 
+	session_start();
+	if($_SESSION['status']!="login"){
+		header("location:login.php?pesan=belum_login");
+	}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -29,13 +39,6 @@
     </div>
   </nav>
 
-  <?php 
-	session_start();
-	if($_SESSION['status']!="login"){
-		header("location:login.php?pesan=belum_login");
-	}
-	?>
-
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-12">
@@ -57,14 +60,25 @@
               </thead>
               <tbody>
                 <?php 
-                   include('koneksi.php');
                     $no = 1;
                     $query = mysqli_query($koneksi,"SELECT * FROM tbl_siswa");
                     while($row = mysqli_fetch_array($query)){
                 ?>
                 <tr>
                   <td><?php echo $no++ ?></td>
-                  <td><?php echo $row['nisn'] ?></td>
+                  <td>
+                    <?php  
+                    if($row['nisn'] == ''){
+                    ?>
+                    Belum ada nis !
+                    <?php
+                    } else {
+                    ?>
+                    <?php echo $row['nisn'] ?>
+                    <?php
+                    }
+                    ?>
+                  </td>
                   <td><?php echo $row['nama_lengkap'] ?></td>
                   <td><?php echo $row['alamat'] ?></td>
                   <td class="text-center">
